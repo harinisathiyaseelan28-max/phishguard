@@ -1,0 +1,29 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#0f172a;color:#e2e8f0}
+header{text-align:center;padding:36px 16px 10px}
+header h1{margin:0;font-size:2.2rem}
+header h1 span{color:#38bdf8}
+header p{color:#94a3b8;margin:8px 0 0}
+main{max-width:760px;margin:20px auto;padding:0 16px}
+.card{background:#1e293b;border:1px solid #334155;border-radius:14px;padding:20px;margin-bottom:18px}
+.card.small{font-size:.85rem;color:#94a3b8}
+textarea{width:100%;background:#0f172a;color:#e2e8f0;border:1px solid #334155;border-radius:10px;padding:12px;font-size:1rem;resize:vertical}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:12px}
+button{background:#0ea5e9;color:#fff;border:0;border-radius:8px;padding:10px 22px;font-size:1rem;cursor:pointer}
+button:hover{background:#0284c7}
+button.ghost{background:transparent;border:1px solid #475569;color:#cbd5e1}
+.samples{font-size:.8rem;color:#94a3b8}
+.samples a{color:#38bdf8;text-decoration:none}
+.hidden{display:none}
+.badge{display:inline-block;font-weight:700;padding:6px 16px;border-radius:999px;font-size:1.1rem}
+.badge.PHISHING{background:#7f1d1d;color:#fecaca}
+.badge.SUSPICIOUS{background:#78350f;color:#fde68a}
+.badge.SAFE{background:#14532d;color:#bbf7d0}
+.meter{height:12px;background:#0f172a;border-radius:6px;margin:14px 0 6px;overflow:hidden}
+#bar{height:100%;width:0;transition:width .5s}
+.advice{color:#cbd5e1}
+h3{margin:16px 0 6px}
+ul{padding-left:20px;margin:6px 0}
+li{margin:4px 0;word-break:break-word}
+.tag{font-size:.75rem;padding:1px 8px;border-radius:6px;margin-left:6px}
+footer{text-align:center;color:#64748b;font-size:.8rem;padding:10px 16px 30px}

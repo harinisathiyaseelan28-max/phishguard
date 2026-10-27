@@ -1,0 +1,68 @@
+{
+  "text_model": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "confusion_matrix": [
+      [
+        300,
+        0
+      ],
+      [
+        0,
+        300
+      ]
+    ]
+  },
+  "url_model": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "confusion_matrix": [
+      [
+        400,
+        0
+      ],
+      [
+        0,
+        400
+      ]
+    ]
+  },
+  "top_url_features": [
+    [
+      "suspicious_tld",
+      0.2026
+    ],
+    [
+      "num_digits",
+      0.1279
+    ],
+    [
+      "digit_ratio",
+      0.1082
+    ],
+    [
+      "num_hyphens_host",
+      0.0903
+    ],
+    [
+      "num_subdomains",
+      0.0688
+    ],
+    [
+      "is_https",
+      0.0618
+    ],
+    [
+      "brand_in_subdomain",
+      0.0578
+    ],
+    [
+      "num_phish_words",
+      0.0557
+    ]
+  ]
+}

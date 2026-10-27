@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PhishGuard AI</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header>
+  <h1>🛡️ PhishGuard <span>AI</span></h1>
+  <p>Paste a URL, SMS or email. Get an instant phishing risk score with reasons.</p>
+</header>
+
+<main>
+  <section class="card">
+    <textarea id="input" rows="6" placeholder="Paste a suspicious link, SMS or email text here..."></textarea>
+    <div class="row">
+      <button id="analyze">Analyze</button>
+      <button id="clear" class="ghost">Clear</button>
+      <span class="samples">Try:
+        <a href="#" data-s="URGENT: Your SBI account has been suspended. Verify now at http://sbi-kyc-update.xyz/login to avoid closure.">phishing SMS</a> ·
+        <a href="#" data-s="http://192.168.4.23/paypal/signin.php?id=88231">bad URL</a> ·
+        <a href="#" data-s="Hey, are we still meeting for lunch at 1 PM?">safe text</a> ·
+        <a href="#" data-s="https://www.wikipedia.org/wiki/Python">safe URL</a>
+      </span>
+    </div>
+  </section>
+
+  <section id="result" class="card hidden">
+    <div id="badge" class="badge"></div>
+    <div class="meter"><div id="bar"></div></div>
+    <p id="score"></p>
+    <p id="advice" class="advice"></p>
+    <h3>Why?</h3>
+    <ul id="reasons"></ul>
+    <h3 id="urlsTitle">Links found</h3>
+    <ul id="urls"></ul>
+  </section>
+
+  <section class="card small" id="metrics"></section>
+</main>
+
+<footer>PhishGuard AI · Mini Project · Educational tool – not a substitute for official security software.</footer>
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
